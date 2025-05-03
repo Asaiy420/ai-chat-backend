@@ -13,9 +13,10 @@ const app = express();
 
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL || [
+    origin: [
       "http://localhost:5173",
       "https://ai-chat-frontend.onrender.com",
+      "https://ai-chat-85xc.vercel.app",
     ],
     credentials: true,
   })
